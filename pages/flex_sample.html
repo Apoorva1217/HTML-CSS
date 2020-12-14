@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Flexbox Example</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarRightItem {
+            background: hotpink;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+
+        .mainContentItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mainContentItem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - Sample Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First article</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most
+                    popular web browser today!
+                    <br>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge
+                    replaced Internet Explorer.
+                    <br>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second
+                    most popular web browser since January, 2018.
+                </p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most
+                    popular web browser today!
+                    <br>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge
+                    replaced Internet Explorer.
+                    <br>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second
+                    most popular web browser since January, 2018.
+                </p>
+            </article>
+            <article>
+                <h2>Third article</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most
+                    popular web browser today!
+                    <br>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge
+                    replaced Internet Explorer.
+                    <br>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second
+                    most popular web browser since January, 2018.
+                </p>
+            </article>
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side bar</p>
+            </div>
+        </sideBar>
+        <sideBar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side bar</p>
+            </div>
+        </sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
